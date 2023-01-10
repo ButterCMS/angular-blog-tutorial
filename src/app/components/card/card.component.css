@@ -1,0 +1,46 @@
+.mgn {
+  margin-bottom: 15px;
+  display: block;
+}
+.card {
+  max-width: 350px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px gainsboro;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: scale(1.01);
+}
+.card > img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+.card__details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+.card__details span:first-child {
+  color: gray;
+}
+
+.card__details p {
+  font-size: 16px;
+  color: rgb(63 63 66);
+}
+.card__author img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+.card__author span {
+  margin-left: 10px;
+}

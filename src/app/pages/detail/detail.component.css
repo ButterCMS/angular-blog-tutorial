@@ -1,0 +1,48 @@
+.blogDetail {
+  width: 95%;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.blogDetail__head span:nth-child(2):after {
+  content: '.';
+  margin-left: 5px;
+  vertical-align: top;
+}
+
+.blogDetail__head span {
+  margin-left: 5px;
+  color: rgb(128, 128, 128);
+}
+
+.blogDetail > h1 {
+  margin-bottom: 15px;
+}
+
+.blogDetail > img {
+  margin: 15px 0;
+}
+
+.blogDetail img{
+  width: 100%;
+}
+
+.blogDetail .blogDetail__profileImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+.blogDetail__body p {
+  color: rgb(62, 60, 60);
+  font-size: 18px;
+}
+
+.blogDetail__body h2, h3{
+  margin: 20px 0 5px;
+}
+
+.blogDetail__body img, video {
+  margin: 5px 0;
+}

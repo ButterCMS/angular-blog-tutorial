@@ -1,0 +1,15 @@
+<div class="card" [routerLink]="['detail', slug]">
+  <img [src]="image" />
+  <div class="card__details">
+    <div>
+      <span class="mgn">{{ date }}</span>
+      <h3>{{ title }}</h3>
+      <p class="mgn">{{ summary }}</p>
+    </div>
+    <div class="card__author">
+      <img [src]="authorImage"/>
+      <span>{{ authorName }}</span>
+    </div>
+  </div>
+</div>
+

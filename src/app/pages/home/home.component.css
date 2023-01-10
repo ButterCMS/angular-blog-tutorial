@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+form input, button {
+  height: 30px;
+  padding: 0 5px;
+  border: none;
+}
+form button:hover {
+  background-color: gainsboro;
+}
+.hero {
+  background-color: rgb(215,59,95);
+  height: 300px;  
+  text-align: center;
+  color: white;
+}
+.hero .wrapper > h2 {
+  margin-top: 70px;
+  font-size: 28px;
+}
+.hero .wrapper p {
+  font-size: 18px;
+}
+.cardList {
+  display: grid;
+  margin-top: 20px;
+  place-content: center;
+  grid-template-columns: repeat(auto-fill, 350px);
+  gap: 15px;
+}
