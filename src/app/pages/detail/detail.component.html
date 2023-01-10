@@ -1,0 +1,10 @@
+<div class="blogDetail">
+  <h1>{{blogPost?.title}}</h1>
+  <div class="blogDetail__head">
+    <img [src]="blogPost?.author.profile_image" class="blogDetail__profileImg" />
+    <span>{{blogPost?.author.first_name + ' ' + blogPost?.author.last_name}}</span>
+    <span>{{date}}</span>
+  </div>
+  <img [src]="blogPost?.featured_image"/>
+  <div class="blogDetail__body" [innerHTML]="html"></div>
+</div>

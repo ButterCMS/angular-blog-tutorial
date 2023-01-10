@@ -1,0 +1,35 @@
+<div>
+  <div class="hero">
+    <div class="wrapper">
+      <header>
+        <h2>Angular Blog</h2>
+        <form (submit)="handleSearch()">
+          <input 
+            placeholder="Search blog" 
+            [(ngModel)]="searchValue"
+            name="search-value"
+            />
+          <button>Search</button>
+        </form>
+      </header>
+      <h2>Explore Angular based contents</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Mauris et porta erat, in sodales augue.
+      </p>
+    </div>
+  </div>
+  <div class="wrapper cardList">
+    <app-card
+      *ngFor="let blogPost of filteredBlogs"
+      [slug]="blogPost.slug" 
+      [date]="blogPost.created " 
+      [summary]="blogPost.summary"
+      [title]="blogPost.title"
+      [image]="blogPost.featured_image"
+      [authorImage]="blogPost.author.profile_image"
+      [authorName]="blogPost.author.first_name + blogPost.author.last_name"
+      >
+    </app-card>
+  </div>
+</div>
